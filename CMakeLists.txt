@@ -12,8 +12,6 @@ set(PAHO_BUILD_STATIC ON)
 set(PAHO_BUILD_SHARED OFF)
 # since we are building a shared library this needs to be set
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
-# fix first time build bug
-add_subdirectory(3rdparty/paho.mqtt.cpp/externals/paho-mqtt-c)
 add_subdirectory(3rdparty/paho.mqtt.cpp)
 
 pybind11_add_module(openGateMqttPython src/mqttClient.cpp)
