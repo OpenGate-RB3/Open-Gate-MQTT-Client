@@ -3,6 +3,6 @@ mkdir build
 
 cd build
 
-cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake ..
 
 cmake --build . --target openGateMqttPython
