@@ -14,7 +14,7 @@ Building the bindings for the first time will make an error; you can just disreg
 * python3.12
 
 ## Generate .pyi file for PyLance IntelliSense
-To generate .pyi files for intellisense, you must install the mypy pip package for the stubgen utility. After doing so, you will need to run this command \
+To generate .pyi files for intellisense, you must install the mypy pip package for the stubgen utility. After doing so, you will need to run this command
  ```sh
 stubgen -m openGateMqttPython -o .
 ```
