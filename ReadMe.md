@@ -19,3 +19,12 @@ To generate .pyi files for intellisense, you must install the mypy pip package f
 stubgen -m openGateMqttPython -o .
 ```
 This will generate a pyi file that can be used to provide intellisense for Pylance and other LSPs.
+
+## Using the bindings
+```python
+import openGateMqttPython as pymqtt
+client = pymqtt.MQTTClient("mqtt://localhost:1883", "my_client")
+client.connect()
+client.publish("exampleTopic", "this is a string payload")
+client.disconnect()
+``` 
